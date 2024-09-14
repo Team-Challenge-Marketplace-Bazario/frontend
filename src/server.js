@@ -1,10 +1,10 @@
 const express = require('express')
-const cors = require('cors') // Импортируем CORS
+const cors = require('cors')
 
 const app = express()
 const port = 5000
 
-app.use(cors()) // Используем CORS для разрешения запросов с другого домена
+app.use(cors())
 
 app.get('/ping', (req, res) => {
 	res.json({ message: 'pong' })
